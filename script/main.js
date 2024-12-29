@@ -10,7 +10,7 @@ function crearElemento(elemento, tabla, clase) {
   div.style.gridColumn = elemento.grupo || "auto";
   div.style.gridRow = elemento.periodo || "auto";
   div.innerHTML = `
-                <span class="numero">${elemento.numeroAtomico}</span>
+                <span class="numero"><p class="masa">${elemento.masaAtomica}</p><p>${elemento.numeroAtomico}</p></span>
                 <span class="simbolo">${elemento.simbolo}</span>
                 <span class="nombre">${elemento.nombre}</span>
                 `;
@@ -56,7 +56,7 @@ botones.forEach((boton) => {
 
     // Mover el scroll hacia arriba
     window.scrollTo({
-      top: 10, // Dirección en el eje Y
+      top: 80, // Dirección en el eje Y
       behavior: "smooth", // Desplazamiento suave
     });
 

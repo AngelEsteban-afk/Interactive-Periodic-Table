@@ -9,13 +9,15 @@ export function mostrarInfo(elemento) {
   info.innerHTML = `
                 Símbolo: ${elemento.simbolo}<br>
                 Número atómico: ${elemento.numeroAtomico}<br>
+                Masa atómica: ${elemento.masaAtomica}<br>
                 ${elemento.grupo ? "Grupo: " + elemento.grupo + "<br>" : ""}
                 ${
                   elemento.periodo
                     ? "Periodo: " + elemento.periodo + "<br>"
                     : ""
                 }
-                ${elemento.tipo ? "Tipo: " + elemento.tipo : ""}
+                ${elemento.tipo ? "Tipo: " + elemento.tipo : ""} <br>
+                ${elemento.imagen}
             `;
 
   modalContent.style.backgroundColor = elemento.color;

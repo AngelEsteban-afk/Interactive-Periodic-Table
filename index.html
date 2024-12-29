@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Numans&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/>
     <link rel="icon" href="/assets/periodic-table.png " type="image/x-icon">
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Tabla Periódica Interactiva</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#elementos">Elementos</a></li>
-            <li><a href="#contacto">Contactos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
         <form class="search-form" role="search">
@@ -27,7 +27,6 @@
             type="search"
             class="search-input"
             placeholder="Buscar elemento..."
-            aria-label="Buscar"
           />
           <button type="submit" class="search-button">Buscar</button>
         </form>
@@ -36,15 +35,16 @@
     </header>
     <br>
     <div class="elemento-guia" id="elemento-ejemplo">
-      <span class="numero">26</span>
+                <span class="numero"><p class="masa">55.845</p><p>26</p></span>
                 <span class="simbolo">Fe</span>
                 <span class="nombre">Hierro</span>
     </div>
 
     <div class="tablas-container">
     <div class="tabla-periodica" id="tablaPeriodica"></div>
-    <h2>Lantánidos y Actínidos</h2>
+    <h2>Lantánidos</h2>
     <div class="tabla-periodica tabla-extra" id="tablaExtra"></div>
+    <h2>Actínidos</h2>
     <div class="tabla-periodica tabla-extra" id="tablaExtra2"></div>
     </div>
 
@@ -115,6 +115,6 @@
             <p>&copy; 2024 AngelEsteban-afk. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script type="module" src="/script/main.js"></script>
+    <script type="module" src="script/main.js"></script>
   </body>
 </html>

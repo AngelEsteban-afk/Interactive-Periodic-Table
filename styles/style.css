@@ -19,7 +19,6 @@ body {
   font-optical-sizing: auto;
   background: linear-gradient(to bottom right, #2e394a, #5e6775);
   overflow-x: hidden;
-  box-sizing: inherit;
 }
 
 /* *************HEADER************* */
@@ -126,24 +125,6 @@ nav ul li a {
   }
 }
 
-/* header {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  padding: 1rem;
-  background: linear-gradient(to bottom right, #145416, #98d99a);
-  color: #000;
-  z-index: 999;
-}
-
-h1 {
-  display: flex;
-  margin: 0 auto;
-  text-align: left;
-  padding: 1rem 0 1rem 22rem;
-  font-size: 2rem;
-} */
-
 /* *********ELEMENTO GUIA************* */
 .elemento-guia {
   height: 150px;
@@ -155,9 +136,15 @@ h1 {
   border-radius: 3.5px;
   font-size: x-large;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  padding: 10px;
+}
+
+.masa2 {
+  margin-right: 40px;
+  font-size: 0.65em;
 }
 
 /* **************TABLA PERIODICA************** */
@@ -199,12 +186,17 @@ h1 {
   font-size: 1.2em;
 }
 .numero {
+  display: flex;
+  flex-direction: row;
   font-size: 0.8em;
 }
 .nombre {
   font-size: 0.6em;
 }
-
+.masa {
+  margin-right: 10px;
+  font-size: 0.53em;
+}
 /* ********************MODAL************************/
 .modal {
   display: none;
