@@ -17,7 +17,6 @@ export function mostrarInfo(elemento) {
                     : ""
                 }
                 ${elemento.tipo ? "Tipo: " + elemento.tipo : ""} <br>
-                ${elemento.imagen}
             `;
 
   modalContent.style.backgroundColor = elemento.color;
